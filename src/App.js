@@ -7,6 +7,9 @@ import {
 } from "react-router-dom";
 
 import './App.css';
+import Home from './components/Home';
+import HousePlans from './components/HousePlans';
+import Land from './components/Land';
 import Motivation from './components/Motivation';
 
 // This site has 3 pages, all of which are rendered
@@ -31,10 +34,13 @@ export default function BasicExample() {
               <Link className="App-link" to="/">Home </Link>
             </li>
             <li>
-              <Link className="App-link" to="/motivation">Motivation</Link>
+              <Link className="App-link" to="/housePlans">House Plans</Link>
             </li>
             <li>
-              <Link className="App-link" to="/dashboard">Dashboard</Link>
+              <Link className="App-link" to="/land">Land</Link>
+            </li>
+            <li>
+              <Link className="App-link" to="/motivation">Motivation</Link>
             </li>
           </ul>
         </div>
@@ -43,73 +49,19 @@ export default function BasicExample() {
             <Route exact path="/">
               <Home />
             </Route>
+            <Route path="/housePlans">
+              <HousePlans/>
+            </Route>
+            <Route path="/land">
+              <Land/>
+            </Route>
             <Route path="/motivation">
               <Motivation/>
-            </Route>
-            <Route path="/dashboard">
-              <Dashboard />
             </Route>
           </Switch>
         </div>
       </div>
-      
-      <hr />
-
     </Router>
   );
 }
 
-// You can think of these components as "pages"
-// in your app.
-
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
-}
-
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
-
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
-    </div>
-  );
-}
-
-
-
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
