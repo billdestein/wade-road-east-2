@@ -1,17 +1,6 @@
 .App {
 }
 
-.App-nav {
-  display: inline-block;
-  width: 200px;
-  background-color: #165916;
-  color: white;
-}
-
-.App-link {
-  color: white;
-}
-
 .App-header {
   background-color: #165916;
   color: white;
@@ -21,10 +10,30 @@
   padding-top: 30px;
 }
 
+.App-nav {
+  display: inline-block;
+  float: left;
+  width: 200px;
+  background-color: #165916;
+  color: white;
+  height: 2000px;
+}
+
+.App-link {
+  color: white;
+  font-size: 1.5em;
+}
+
 .App-nav ul {
   list-style-type: none;
 }
 
+.App-nav ul li {
+  line-height: 30px;
+}
+
 .App-content {
+  height: 2000px;
   display: inline-block;
+  float: left;
 }

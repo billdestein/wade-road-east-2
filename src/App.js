@@ -28,38 +28,40 @@ export default function BasicExample() {
         <div className="App-header">
           Wade Road East
         </div>
-        <div className="App-nav">
-          <ul>
-            <li>
-              <Link className="App-link" to="/">Home </Link>
-            </li>
-            <li>
-              <Link className="App-link" to="/housePlans">House Plans</Link>
-            </li>
-            <li>
-              <Link className="App-link" to="/land">Land</Link>
-            </li>
-            <li>
-              <Link className="App-link" to="/motivation">Motivation</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="App-content">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/housePlans">
-              <HousePlans/>
-            </Route>
-            <Route path="/land">
-              <Land/>
-            </Route>
-            <Route path="/motivation">
-              <Motivation/>
-            </Route>
-          </Switch>
-        </div>
+        <div>
+          <div className="App-nav">
+            <ul>
+              <li>
+                <Link className="App-link" to="/">Home </Link>
+              </li>
+              <li>
+                <Link className="App-link" to="/housePlans">House Plans</Link>
+              </li>
+              <li>
+                <Link className="App-link" to="/land">Land</Link>
+              </li>
+              <li>
+                <Link className="App-link" to="/motivation">Motivation</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="App-content">
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/housePlans">
+                <HousePlans/>
+              </Route>
+              <Route path="/land">
+                <Land/>
+              </Route>
+              <Route path="/motivation">
+                <Motivation/>
+              </Route>
+            </Switch>
+          </div>
+        </div>        
       </div>
     </Router>
   );
