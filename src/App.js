@@ -6,6 +6,9 @@ import {
   Link
 } from "react-router-dom";
 
+import './App.css';
+import Motivation from './components/Motivation';
+
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
 //
@@ -18,18 +21,23 @@ import {
 export default function BasicExample() {
   return (
     <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-        </ul>
+      <div className="App">
+        <div className="App-header">
+          Wade Road East
+        </div>
+        <div className="App-nav">
+          <ul>
+            <li>
+              <Link className="App-link" to="/">Home </Link>
+            </li>
+            <li>
+              <Link className="App-link" to="/about">About</Link>
+            </li>
+            <li>
+              <Link className="App-link" to="/dashboard">Dashboard</Link>
+            </li>
+          </ul>
+        </div>
 
         <hr />
 
@@ -62,6 +70,7 @@ export default function BasicExample() {
 function Home() {
   return (
     <div>
+      <Motivation/>
       <h2>Home</h2>
     </div>
   );
