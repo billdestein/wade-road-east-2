@@ -28,7 +28,7 @@ export default function BasicExample() {
         <div className="App-header">
           Wade Road East
         </div>
-        <div>
+        <div className="App-middle">
           <div className="App-nav">
             <ul>
               <li>

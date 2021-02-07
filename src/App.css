@@ -10,8 +10,12 @@
   padding-top: 30px;
 }
 
+.App-middle {
+  width: 100%;
+  overflow: auto;
+}
+
 .App-nav {
-  display: inline-block;
   float: left;
   width: 200px;
   background-color: #165916;
@@ -33,7 +37,8 @@
 }
 
 .App-content {
-  height: 2000px;
+  float: right;
   display: inline-block;
-  float: left;
+  height: 2000px;
+  width: calc(100% - 200px);
 }
