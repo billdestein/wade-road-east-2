@@ -31,7 +31,7 @@ export default function BasicExample() {
               <Link className="App-link" to="/">Home </Link>
             </li>
             <li>
-              <Link className="App-link" to="/about">About</Link>
+              <Link className="App-link" to="/motivation">Motivation</Link>
             </li>
             <li>
               <Link className="App-link" to="/dashboard">Dashboard</Link>
@@ -43,8 +43,8 @@ export default function BasicExample() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/about">
-              <About />
+            <Route path="/motivation">
+              <Motivation/>
             </Route>
             <Route path="/dashboard">
               <Dashboard />
@@ -65,7 +65,6 @@ export default function BasicExample() {
 function Home() {
   return (
     <div>
-      <Motivation/>
       <h2>Home</h2>
     </div>
   );
