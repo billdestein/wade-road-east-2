@@ -8,12 +8,6 @@
   color: white;
 }
 
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-link {
   color: white;
 }
@@ -29,4 +23,8 @@
 
 .App-nav ul {
   list-style-type: none;
+}
+
+.App-content {
+  display: inline-block;
 }
